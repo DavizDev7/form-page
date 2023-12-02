@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>form</title>
+  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+  <form id="form" method="post" class="animate__animated animate__flipInY animate__slow-6s" action="post.html">
+    <h1 class="animate__animated animate__jackInTheBox">FORM</h1>
+    <label>Nome completo* </label><input required type="text" name="name" placeholder="Nome Completo" id="name">
+    <label>Nascimento* </label><input type="date" required placeholder="data de nascimento" name="nascimento" id="nascimento">
+    <label>Email*</label><input type="email" required name="Email" placeholder="Email" id="Email">
+    <label>Senha* </label><input required type="password" name="password" placeholder="Senha" id="password">
+    <label>confirmar Senha* </label><input type="password" name="Cpassword" required placeholder="confirmar Senha" id="Cpassword">
+    <span id="warn"><i class="bi bi-exclamation-triangle-fill"></i> As senhas não estão iguais <i class="bi bi-exclamation-triangle-fill"></i></span>
+    <button onclick="send()" type="button" id="btn">Enviar</button>
+  </form>
+</body>
+<script src="./index.js"></script>
+
+</html>
